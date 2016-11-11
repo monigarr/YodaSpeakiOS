@@ -3,7 +3,7 @@ Translate english to Yoda, I do. Yessss
 
 # Requirements
  - build a complete iOS app with unit / ui tests within a few hours of receiving the tech requirements.
- - Requirements Doc: 
+ - Requirements Doc: https://github.com/monigarr/YodaSpeakiOS/blob/master/ShopKeep_iOS_Code_Challenge_YodaSpeak.pdf
 
 # Features
 - enter english text and translate to yoda text
