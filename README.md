@@ -1,6 +1,10 @@
 # YodaSpeakiOS
 Translate english to Yoda, I do. Yessss
 
+# Requirements
+ - build a complete iOS app with unit / ui tests within a few hours of receiving the tech requirements.
+ - Requirements Doc: 
+
 # Features
 - enter english text and translate to yoda text
 
