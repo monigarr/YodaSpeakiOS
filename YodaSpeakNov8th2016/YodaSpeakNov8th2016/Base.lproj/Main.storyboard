@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="splitview1_3"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sf-5B-UTI">
+                                <rect key="frame" x="14" y="120" width="69" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="ItO-mq-RNB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ItO-mq-RNB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ItO-mq-RNB"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2d-br-B0F">
+                                <rect key="frame" x="12" y="162" width="115" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="englishTextView"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="CiM-jF-drx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CiM-jF-drx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CiM-jF-drx"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YODA TRANSLATOR" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3H-Nj-EGT">
+                                <rect key="frame" x="109" y="53" width="157" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55T-xv-tU3">
+                                <rect key="frame" x="43" y="318" width="234" height="83"/>
+                                <accessibility key="accessibilityConfiguration" label="translateButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="PqR-Op-hvv"/>
+                                </constraints>
+                                <state key="normal" title="TRANSLATE TO YODA"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PqR-Op-hvv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="PqR-Op-hvv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="sendRequestTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ti6-kc-Btb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoda:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-iX-4Cr">
+                                <rect key="frame" x="306" y="120" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="nn8-RS-vHE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nn8-RS-vHE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="nn8-RS-vHE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJA-4B-dxK">
+                                <rect key="frame" x="189" y="162" width="115" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="yodaTextView"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f3H-Nj-EGT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Pf-9r-wLh"/>
+                            <constraint firstItem="8sf-5B-UTI" firstAttribute="baseline" secondItem="gSa-iX-4Cr" secondAttribute="baseline" id="2gI-yM-AD4"/>
+                            <constraint firstItem="8sf-5B-UTI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="5vi-l0-1nz"/>
+                            <constraint firstItem="55T-xv-tU3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="671-Tg-gMo"/>
+                            <constraint firstItem="gSa-iX-4Cr" firstAttribute="baseline" secondItem="8sf-5B-UTI" secondAttribute="firstBaseline" id="6p7-gM-Lvy"/>
+                            <constraint firstItem="e2d-br-B0F" firstAttribute="top" secondItem="yJA-4B-dxK" secondAttribute="top" id="DOd-Q4-g4g"/>
+                            <constraint firstItem="yJA-4B-dxK" firstAttribute="top" secondItem="f3H-Nj-EGT" secondAttribute="bottom" constant="93" id="Dh1-rn-ySL"/>
+                            <constraint firstItem="gSa-iX-4Cr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Eq7-Pl-nRl"/>
+                            <constraint firstItem="e2d-br-B0F" firstAttribute="bottom" secondItem="yJA-4B-dxK" secondAttribute="bottom" id="GKp-mn-oLo"/>
+                            <constraint firstItem="gSa-iX-4Cr" firstAttribute="trailing" secondItem="yJA-4B-dxK" secondAttribute="trailing" id="IfA-DH-k67"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e2d-br-B0F" secondAttribute="bottom" constant="138" id="L6O-Hv-n6s"/>
+                            <constraint firstItem="e2d-br-B0F" firstAttribute="top" secondItem="8sf-5B-UTI" secondAttribute="bottom" constant="21" id="UaC-Fy-Eyf"/>
+                            <constraint firstItem="f3H-Nj-EGT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="brU-jR-T64"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="55T-xv-tU3" secondAttribute="bottom" constant="79" id="cSa-Yp-olT"/>
+                            <constraint firstItem="8sf-5B-UTI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="ir3-as-KGT"/>
+                            <constraint firstItem="yJA-4B-dxK" firstAttribute="leading" secondItem="e2d-br-B0F" secondAttribute="trailing" constant="62" id="jQN-UV-wb6"/>
+                            <constraint firstItem="e2d-br-B0F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="kVw-Qz-tdu"/>
+                            <constraint firstItem="f3H-Nj-EGT" firstAttribute="centerX" secondItem="55T-xv-tU3" secondAttribute="centerX" id="z4l-Df-9Hs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="f3H-Nj-EGT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Pf-9r-wLh"/>
+                                <exclude reference="brU-jR-T64"/>
+                                <exclude reference="z4l-Df-9Hs"/>
+                                <exclude reference="2gI-yM-AD4"/>
+                                <exclude reference="5vi-l0-1nz"/>
+                                <exclude reference="ir3-as-KGT"/>
+                                <exclude reference="DOd-Q4-g4g"/>
+                                <exclude reference="GKp-mn-oLo"/>
+                                <exclude reference="UaC-Fy-Eyf"/>
+                                <exclude reference="kVw-Qz-tdu"/>
+                                <exclude reference="Dh1-rn-ySL"/>
+                                <exclude reference="jQN-UV-wb6"/>
+                                <exclude reference="6p7-gM-Lvy"/>
+                                <exclude reference="Eq7-Pl-nRl"/>
+                                <exclude reference="IfA-DH-k67"/>
+                                <exclude reference="671-Tg-gMo"/>
+                                <exclude reference="L6O-Hv-n6s"/>
+                                <exclude reference="cSa-Yp-olT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="f3H-Nj-EGT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2Pf-9r-wLh"/>
+                                <include reference="brU-jR-T64"/>
+                                <include reference="z4l-Df-9Hs"/>
+                                <include reference="2gI-yM-AD4"/>
+                                <include reference="5vi-l0-1nz"/>
+                                <include reference="ir3-as-KGT"/>
+                                <include reference="DOd-Q4-g4g"/>
+                                <include reference="GKp-mn-oLo"/>
+                                <include reference="UaC-Fy-Eyf"/>
+                                <include reference="kVw-Qz-tdu"/>
+                                <include reference="Dh1-rn-ySL"/>
+                                <include reference="jQN-UV-wb6"/>
+                                <include reference="6p7-gM-Lvy"/>
+                                <include reference="Eq7-Pl-nRl"/>
+                                <include reference="IfA-DH-k67"/>
+                                <include reference="671-Tg-gMo"/>
+                                <include reference="L6O-Hv-n6s"/>
+                                <include reference="cSa-Yp-olT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="englishTextView" destination="e2d-br-B0F" id="u8I-ty-9zs"/>
+                        <outlet property="translateButton" destination="55T-xv-tU3" id="EAu-7W-Ydz"/>
+                        <outlet property="yodaTextView" destination="yJA-4B-dxK" id="45y-J6-Txh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.625" y="131.25"/>
+        </scene>
+    </scenes>
+</document>
